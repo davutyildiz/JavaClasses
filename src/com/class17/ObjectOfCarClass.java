@@ -16,7 +16,12 @@ public class ObjectOfCarClass {
 		car1.wheels=4;
 		car1.windows=5;
 		car1.speed=200;
+		// accessing behavior for 1 object
+		car1.start();
+		car1.drive();
+		car1.accelerate();
 		
+		System.out.println("_______________");
 		
 		Car car2=new Car();
 		car2.make="BMW";
@@ -26,6 +31,10 @@ public class ObjectOfCarClass {
 		car2.wheels=4;
 		car2.windows=5;
 		car2.speed=300;
+		// accessing behavior for 2 object
+		car2.start();
+		car2.drive();
+		car2.accelerate();
 		
 		
 		// print feature of the car
