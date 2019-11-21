@@ -10,7 +10,7 @@ public class IQ6 {
 		System.out.println(a);
 		for(int i=0; i<array.length; i++) {
 			System.out.println(array[i]);
-			if(array[i]==array.length()) {
+			if(array[i]==array.length) {
 				System.out.println("palindrome");
 			}else {
 				System.out.println("not palindrome");
