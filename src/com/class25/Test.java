@@ -30,6 +30,28 @@ public class Test {
 		dev.artifacts="Sprint Backlog";
 		dev.ceremonies="Sprint Demo, Planning, Retro, Daily Standup";
 		dev.attendScrumMeetings();
+		dev.employeeId=101;
+		//dev.employeeSnn not accessible !
+		
+		System.out.println("----- Create an object of Tester Class---");
+		Tester ts=new Tester();
+		ts.salary=105000;
+		ts.work();
+		ts.getPaid();
+		ts.test();
+		ts.artifacts="Sprint Backlog";
+		ts.ceremonies="Sprint Demo, Planning, Retro, Daily Standup";
+		ts.attendScrumMeetings();
+		
+		System.out.println("---- Create an object of ScrumMaster class----");
+		ScrumMaster Smas=new ScrumMaster();
+		Smas.salary=150000;
+		Smas.work();
+		Smas.getPaid();
+		Smas.coordianteTeam();
+		Smas.artifacts="Sprint Backlog";
+		Smas.ceremonies="Sprint Demo, Planning, Retro, Daily Standup";
+		Smas.attendScrumMeetings();
 		
 	}
 

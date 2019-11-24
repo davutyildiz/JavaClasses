@@ -1,9 +1,10 @@
 package com.class25;
 
 public class Employee {
-	int salary;
-	static String companyName;
-	
+	public static String companyName;
+	int salary;// accessible within same package
+	protected int employeeId;
+	private String enmployeeSsn;
 	void work(){
 		System.out.println(" I work in "+ companyName+" company");
 	}
