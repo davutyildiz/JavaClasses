@@ -38,11 +38,11 @@ class Sedan extends Car {
 	}
 
 	public double calculateSalePrice() {
-
+			double sedanPrice;
 		if (length > 20) {
-			carPrice = carPrice - (carPrice * 0.05);
+			sedanPrice = carPrice - (carPrice * 0.05);
 		} else {
-			carPrice = carPrice - (carPrice * 0.1);
+			sedanPrice = carPrice - (carPrice * 0.1);
 		}
 		return carPrice;
 	}
@@ -58,11 +58,11 @@ class Truck extends Car {
 	}
 
 	public double calculateSalePrice() {
-
+		double TruckPrice;
 		if (weight > 2000) {
-			carPrice = carPrice * 0.90;
+			TruckPrice = carPrice * 0.90;
 		} else {
-			carPrice = carPrice * 0.80;
+			TruckPrice = carPrice * 0.80;
 		}
 		return carPrice;
 	}
@@ -76,6 +76,7 @@ public class CarTest {
 		System.out.println("---------Sedan---------");
 		Sedan sedan=new Sedan(2000, "pink", 30);
 		System.out.println(sedan.calculateSalePrice());
+		
 
 		System.out.println("---------Truck---------");
 		Truck truck = new Truck(2000, "grey", 3000);
